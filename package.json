@@ -1,0 +1,23 @@
+{
+  "name": "shaun-braai-box",
+  "version": "1.0.0",
+  "description": "A promotional website for Shaun Braai Box.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process can be defined here.'"
+  },
+  "keywords": [
+    "braai",
+    "bbq",
+    "food",
+    "promotion",
+    "website"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
