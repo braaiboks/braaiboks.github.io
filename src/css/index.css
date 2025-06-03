@@ -35,7 +35,7 @@ main {
 section {
     background: rgba(35, 42, 52, 0.85);
     border-radius: 18px;
-    box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+    box-shadow: 0 4px 32px rgba(245, 148, 2, 0.18);
     padding: 40px 32px;
     margin-bottom: 36px;
     backdrop-filter: blur(4px);
@@ -44,7 +44,7 @@ section {
 }
 
 section:hover {
-    box-shadow: 0 8px 40px #00eaff22;
+    box-shadow: 0 8px 40px #ffa60222;
 }
 
 footer {
@@ -69,12 +69,12 @@ a {
 
 a:hover {
     color: #fff;
-    text-shadow: 0 0 8px #00eaff99;
+    text-shadow: 0 0 8px #ffae0099;
     text-decoration: underline;
 }
 
 button, .btn {
-    background: linear-gradient(90deg, #00eaff 0%, #00b3c6 100%);
+    background: linear-gradient(90deg, #ffbb00 0%, #ffa600 100%);
     color: #181c24;
     border: none;
     border-radius: 8px;
@@ -84,14 +84,14 @@ button, .btn {
     cursor: pointer;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
     margin-top: 20px;
-    box-shadow: 0 2px 12px rgba(0,234,255,0.08);
+    box-shadow: 0 2px 12px rgba(255, 166, 0, 0.315);
     letter-spacing: 0.5px;
 }
 
 button:hover, .btn:hover {
-    background: linear-gradient(90deg, #00b3c6 0%, #00eaff 100%);
+    background: linear-gradient(90deg, #ff8800 0%, #f58301 100%);
     color: #fff;
-    box-shadow: 0 4px 24px #00eaff44;
+    box-shadow: 0 4px 24px #ff89028e;
 }
 
 @media (max-width: 600px) {
