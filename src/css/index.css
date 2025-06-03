@@ -333,6 +333,15 @@ section p {
     max-width: 600px;
     border: 1px solid #2d2d2d;
     backdrop-filter: blur(2px);
+    text-align: center; /* Center heading and form */
+}
+.contact-form h2 {
+    color: #ffd700;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px #ff6a0055;
+    font-family: "poppins-bold", 'Segoe UI', Arial, sans-serif;
 }
 
 input, textarea {
