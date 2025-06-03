@@ -10,6 +10,51 @@ body {
     overflow-x: hidden;
 }
 
+/* Add to your main CSS file (e.g., index.css) */
+
+#logo-loader {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: #18181b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.7s cubic-bezier(.4,2,.6,1), visibility 0.7s;
+}
+
+.logo-loader-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#loader-logo {
+  width: 120px;
+  height: auto;
+  transition: transform 0.7s cubic-bezier(.4,2,.6,1), opacity 0.7s;
+  will-change: transform, opacity;
+}
+
+#loader-bar-bg {
+  width: 180px;
+  height: 10px;
+  background: #23232a;
+  border-radius: 6px;
+  margin-top: 32px;
+  overflow: hidden;
+  box-shadow: 0 0 12px #ff6a00aa;
+}
+
+#loader-bar {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #ff6a00 0%, #ffd700 100%);
+  border-radius: 6px;
+  transition: width 0.3s;
+  box-shadow: 0 0 8px #ff6a00cc;
+}
+
 /* Ember animated background */
 body::before {
     content: "";
