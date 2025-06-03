@@ -357,7 +357,7 @@ button, .btn, .submitform {
     background: linear-gradient(90deg, #ff7b00d7 0%, #ff6a003f 100%);
     color: #ffffff;
     border: none;
-    border-radius: 8px;
+    border-radius: 16px;
     padding: 14px 34px;
     font-size: 1.15rem;
     font-weight: 700;
@@ -367,6 +367,13 @@ button, .btn, .submitform {
     box-shadow: 0 2px 12px #ff6a005b;
     letter-spacing: 0.5px;
     animation: emberGlow 2.5s infinite alternate;
+    display: block;           /* Make button a block element */
+    margin: 10px 0 18px 0;
+    width: 100%;             /* Full width for better UX */
+    text-align: center;      /* Center text within button */
+    font-family: 'Segoe UI', Arial, sans-serif; /* Consistent font */
+    text-transform: uppercase; /* Uppercase for emphasis */
+    box-sizing: border-box;  /* Ensure padding and border are included in width */
 }
 
 button:hover, .btn:hover, .submitform:hover {
