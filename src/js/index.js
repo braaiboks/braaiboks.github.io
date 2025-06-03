@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
       clearInterval(interval);
       setTimeout(() => {
         // Animate logo towards viewer and fade out loader
-        logo.style.transform = 'scale(2.5)';
+        logo.style.transform = 'scale(8.5)';
         logo.style.opacity = '0';
         loader.style.opacity = '0';
         loader.style.visibility = 'hidden';
@@ -23,5 +23,5 @@ window.addEventListener('DOMContentLoaded', () => {
         }, 700);
       }, 400);
     }
-  }, 60);
+  }, 90);
 });
