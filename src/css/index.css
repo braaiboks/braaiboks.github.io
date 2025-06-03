@@ -148,7 +148,7 @@ body {
     margin-bottom: 1.2rem;
 }
 .intro-content .button {
-    color: #fff !important;
+    color: #111 !important;
     border: 2px solid #ffd700;
     background: linear-gradient(90deg, #ff6a00 0%, #ffd700 100%);
     height: 3.2rem !important;
