@@ -66,9 +66,9 @@ body {
 /* Intro Section */
 #intro {
   background-image: 
-    linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%),
     url("/Assets/images/company-logo-bg.webp");
-  background-size: 100% 125%; /* Fills width and height */
+  background-size: 100% 100%; /* Fills width and height */
   background-position: center center;
   background-repeat: no-repeat;
   background-origin: padding-box;
@@ -91,7 +91,7 @@ body {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, #18181b 0%, #151515cc 100%);
-  opacity: 0.82;
+  opacity: 0;
   z-index: 1;
   pointer-events: none;
 }
@@ -104,7 +104,7 @@ body {
   width: 320px;
   height: 180px;
   background: radial-gradient(circle, #ff6a00 0%, transparent 80%);
-  opacity: 0.12;
+  opacity: 0.1;
   transform: translate(-50%, -50%);
   pointer-events: none;
   z-index: 2;
