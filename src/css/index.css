@@ -676,3 +676,70 @@ html, body {
     padding: 0 8px;
   }
 }
+
+.product-description {
+  flex: 1 1 340px;
+  min-width: 240px;
+  background: rgba(34,34,38,0.82);
+  border-radius: 16px;
+  box-shadow: 0 2px 24px #ff6a0022;
+  padding: 2.2rem 2rem 2rem 2rem;
+  color: #fffbe0;
+  font-size: 1.13rem;
+  line-height: 1.7;
+}
+
+.product-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9em;
+  margin-bottom: 2em;           /* More space between features */
+  font-size: 1.13em;            /* Slightly larger text */
+  line-height: 1.85;            /* More line height for readability */
+  background: rgba(255,255,255,0.04);
+  border-radius: 12px;
+  padding: 1.2em 1.5em;         /* More padding for breathing room */
+  box-shadow: 0 1px 8px #ff6a0011;
+  word-break: normal;           /* Prevent awkward word breaks */
+  overflow-wrap: anywhere;      /* Allow wrapping at natural points */
+}
+
+.feature-icon {
+  font-size: 1.7em;
+  margin-right: 0.3em;
+  flex-shrink: 0;
+  color: #ff6a00;
+  filter: drop-shadow(0 0 4px #ffd70088);
+  margin-top: 0.1em;
+}
+
+.feature-title {
+  font-weight: 700;
+  color: #ffd700;
+  margin-right: 0.2em;
+  white-space: nowrap;          /* Keep feature titles on one line */
+}
+
+.feature-desc {
+  color: #fffbe0;
+  font-weight: 400;
+  display: inline;
+  word-break: normal;
+}
+
+@media (max-width: 900px) {
+  .product-description {
+    padding: 1.5rem 1rem;
+    font-size: 1.05rem;
+  }
+  .product-features li {
+    font-size: 1em;
+    padding: 0.8em 0.7em;
+  }
+}
