@@ -67,7 +67,7 @@ body {
 #intro {
   background-image: 
     linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%),
-    url("/Assets/images/company-logo-bg.png");
+    url("/Assets/images/company-logo-bg.webp");
   background-size: 100% 125%; /* Fills width and height */
   background-position: center center;
   background-repeat: no-repeat;
