@@ -55,177 +55,235 @@ body {
   box-shadow: 0 0 8px #ff6a00cc;
 }
 
+/**
+ * ===================================================================
+ * 10. intro - (_layout.scss converted to CSS)
+ *
+ * -------------------------------------------------------------------
+ */
 
- 
- /** 
-  * ===================================================================
-  * 10. intro - (_layout.scss) 
-  *
-  * ------------------------------------------------------------------- 
-  */
- #intro {
-    background-image: 
-      linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(21, 21, 21, 0.8) 100%),
-      url("Assets/images/company-logo-bg.gif");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-origin: padding-box;
-    background-clip: border-box;
-    background-color: #151515;
-    background-attachment: scroll;
-    width: 100%;
-    min-height: 720px;
-    max-height: 1200px;
-    display: table;
-    position: relative;
-    text-align: center;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+/* Intro Section */
+#intro {
+  background-image: 
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(21, 21, 21, 0.8) 100%),
+    url("/Assets/images/company-logo-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-color: #151515;
+  background-attachment: scroll;
+  width: 100%;
+  min-height: 720px;
+  max-height: 1200px;
+  display: table;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
+
 #intro::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, #18181b 0%, #151515cc 100%);
-    opacity: 0.82;
-    z-index: 1;
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #18181b 0%, #151515cc 100%);
+  opacity: 0.82;
+  z-index: 1;
+  pointer-events: none;
 }
+
 #intro::after {
-    content: "";
-    position: absolute;
-    left: 60%; top: 80%;
-    width: 320px; height: 180px;
-    background: radial-gradient(circle, #ff6a00 0%, transparent 80%);
-    opacity: 0.12;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    z-index: 2;
-    animation: emberSection 4s infinite alternate;
+  content: "";
+  position: absolute;
+  left: 60%;
+  top: 80%;
+  width: 320px;
+  height: 180px;
+  background: radial-gradient(circle, #ff6a00 0%, transparent 80%);
+  opacity: 0.12;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 2;
+  animation: emberSection 4s infinite alternate;
 }
-.intro-overlay {
-    display: none; /* overlay now handled by #intro::before */
-}
+
+/* Intro Content */
 .intro-content {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    position: relative;
-    z-index: 3;
-    transform: translateY(-2.1rem);
-    animation: fadeInIntro 1.2s cubic-bezier(.4,2,.6,1);
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  transform: translateY(-2.1rem);
+  animation: fadeInIntro 1.2s cubic-bezier(.4, 2, .6, 1);
 }
+
 @keyframes fadeInIntro {
-    from { opacity: 0; transform: translateY(2rem);}
-    to   { opacity: 1; transform: translateY(-2.1rem);}
+  from { opacity: 0; transform: translateY(2rem); }
+  to   { opacity: 1; transform: translateY(-2.1rem); }
 }
+
 .intro-content h1 {
-    color: #fff;
-    font-family: "poppins-medium", sans-serif;
-    font-size: 8.4rem;
-    line-height: 1.071;
-    max-width: 900px;
-    margin-top: 0;
-    margin-bottom: .6rem;
-    margin-left: auto;
-    margin-right: auto;
-    text-shadow: 0 0 32px #ff6a0033, 0 0 20px rgba(0,0,0,0.5);
-    letter-spacing: 2px;
-    transition: color 0.3s;
+  color: #fff;
+  font-family: "poppins-medium", sans-serif;
+  font-size: 8.4rem;
+  line-height: 1.071;
+  max-width: 900px;
+  margin: 0 auto .6rem;
+  text-shadow: 0 0 32px #ff6a0033, 0 0 20px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  transition: color 0.3s;
 }
+
 .intro-content h5 {
-    color: #ffd700;
-    font-family: "poppins-bold", sans-serif;
-    font-size: 2.3rem;
-    line-height: 1.565;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    letter-spacing: .3rem;
-    text-shadow: 0 0 12px #ff6a0033, 0 0 6px rgba(0,0,0,0.2);
+  color: #ffd700;
+  font-family: "poppins-bold", sans-serif;
+  font-size: 2.3rem;
+  line-height: 1.565;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  text-shadow: 0 0 12px #ff6a0033, 0 0 6px rgba(0, 0, 0, 0.2);
 }
+
 .intro-content .intro-position {
-    font-family: "lora-regular", serif;
-    font-size: 1.7rem;
-    line-height: 2.4rem;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    color: #ffd700;
-    text-shadow: 0 0 6px #ff6a0033, 0 0 6px rgba(0,0,0,0.2);
-    margin-bottom: 1.2rem;
+  font-family: "lora-regular", serif;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  color: #ffd700;
+  text-shadow: 0 0 6px #ff6a0033, 0 0 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.2rem;
 }
+
 .intro-content .button {
-    color: #111 !important;
-    border: 2px solid #ffd700;
-    background: linear-gradient(90deg, #ff6a00 0%, #ffd700 100%);
-    height: 3.2rem !important;
-    line-height: 3rem !important;
-    padding: 0 2.5rem 0 2rem !important;
-    margin-top: 1.2rem;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    letter-spacing: .25rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px #ff6a005b;
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  color: #111 !important;
+  border: 2px solid #ffd700;
+  background: linear-gradient(90deg, #ff6a00 0%, #ffd700 100%);
+  height: 3.2rem !important;
+  line-height: 3rem !important;
+  padding: 0 2.5rem 0 2rem !important;
+  margin-top: 1.2rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px #ff6a005b;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  text-decoration: none;
 }
-.intro-content .button:hover, .intro-content .button:focus {
-    background: #cc005f;
-    color: #fff !important;
-    border-color: #cc005f;
-    box-shadow: 0 4px 24px #ff6a00aa;
+
+.intro-content .button:hover,
+.intro-content .button:focus {
+  background: #cc005f;
+  color: #fff !important;
+  border-color: #cc005f;
+  box-shadow: 0 4px 24px #ff6a00aa;
 }
+
+/* Social Icons */
 .intro-social {
   display: flex;
   justify-content: center;
   gap: 1.5em;
-  margin: 1em 0 0 0; /* Reduce this value to move icons up */
+  margin: 1em 0 0 0;
   padding: 0;
   list-style: none;
-  font-size: 2.7rem; /* Increase this value for larger icons */
+  font-size: 2.7rem;
 }
+
 .intro-social li {
-    display: inline-block;
-    margin: 0 20px;
-    padding: 0;
+  display: inline-block;
+  margin: 0 20px;
 }
-.intro-social li a, .intro-social li a:visited {
-    color: #ffd700;
-    transition: color 0.2s, text-shadow 0.2s;
-    width: 56px;
-    height: 56px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 1em; /* Keep icons proportional to .intro-social */
+
+.intro-social li a,
+.intro-social li a:visited {
+  color: #ffd700;
+  transition: color 0.2s, text-shadow 0.2s;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1em;
+  text-decoration: none;
 }
-.intro-social li a:hover, .intro-social li a:focus {
-    color: #ff6a00;
-    text-shadow: 0 0 8px #ff6a00aa;
+
+.intro-social li a:hover,
+.intro-social li a:focus {
+  color: #ff6a00;
+  text-shadow: 0 0 8px #ff6a00aa;
 }
-/* Responsive improvements */
-@media only screen and (max-width:1024px) {
-    .intro-content h1 { font-size: 7.6rem; }
-    .intro-social { font-size: 3rem; }
-    .intro-social li { margin: 0 15px; }
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 1024px) {
+  .intro-content h1 {
+    font-size: 7.6rem;
+  }
+  .intro-social {
+    font-size: 3rem;
+  }
+  .intro-social li {
+    margin: 0 15px;
+  }
 }
-@media only screen and (max-width:768px) {
-    #intro { min-height: 660px; }
-    .intro-content h1 { font-size: 5.2rem; }
-    .intro-content h5 { font-size: 1.8rem; }
-    .intro-content .intro-position { font-size: 1.3rem; }
-    .intro-social { font-size: 2.5rem; }
-    .intro-social li { margin: 0 10px; }
+
+@media only screen and (max-width: 768px) {
+  #intro {
+    min-height: 660px;
+  }
+  .intro-content h1 {
+    font-size: 5.2rem;
+  }
+  .intro-content h5 {
+    font-size: 1.8rem;
+  }
+  .intro-content .intro-position {
+    font-size: 1.3rem;
+  }
+  .intro-social {
+    font-size: 2.5rem;
+  }
+  .intro-social li {
+    margin: 0 10px;
+  }
 }
-@media only screen and (max-width:600px) {
-    #intro { min-height: 520px; }
-    .intro-content h1 { font-size: 2.2rem; margin-bottom: .6rem; }
-    .intro-content h5 { font-size: 1.2rem; margin-bottom: .3rem; letter-spacing: .1rem; }
-    .intro-content .intro-position { font-size: 1rem; }
-    .intro-social { font-size: 1.6rem; }
+
+@media only screen and (max-width: 600px) {
+  #intro {
+    min-height: 520px;
+  }
+  .intro-content h1 {
+    font-size: 2.2rem;
+    margin-bottom: .6rem;
+  }
+  .intro-content h5 {
+    font-size: 1.2rem;
+    margin-bottom: .3rem;
+    letter-spacing: .1rem;
+  }
+  .intro-content .intro-position {
+    font-size: 1rem;
+  }
+  .intro-social {
+    font-size: 1.6rem;
+  }
 }
- 
+
+/* Ember Animation */
+@keyframes emberSection {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
 
 /* Ember animated background */
 body::before {
@@ -448,7 +506,7 @@ a:hover {
               radial-gradient(circle at 30% 60%, #ff3c00 0 12%, transparent 70%),
               radial-gradient(circle at 80% 30%, #ffd70022 0 10%, transparent 80%);
   opacity: 0.24; /* was 0.18 */
-  animation: emberBgPulse 7s infinite alternate;
+  animation: emberBgPulse 8s infinite alternate;
   filter: blur(1.5px); /* slightly sharper */
 }
 @keyframes emberBgPulse {
