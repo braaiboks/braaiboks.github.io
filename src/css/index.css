@@ -444,7 +444,7 @@ a:hover {
   z-index: -10;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(circle at 60% 80%, #ff6a00 0 18%, transparent 60%),
+  background: radial-gradient(circle at 60% 80%, #ff6a00 0 28%, transparent 60%),
               radial-gradient(circle at 30% 60%, #ff3c00 0 12%, transparent 70%),
               radial-gradient(circle at 80% 30%, #ffd70022 0 10%, transparent 80%);
   opacity: 0.18;
