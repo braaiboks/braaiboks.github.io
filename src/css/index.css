@@ -181,263 +181,164 @@ body {
     box-shadow: 0 4px 24px #ff6a00aa;
 }
 .intro-social {
-    display: block;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 4.2rem;
-    font-size: 3.3rem;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
     padding: 0;
     z-index: 4;
+    animation: fadeInIntro 2.5s cubic-bezier(.4,2,.6,1);
 }
 .intro-social li {
-    display: inline-block;
-    margin: 0 20px;
-    padding: 0;
+    list-style: none;
 }
-.intro-social li a, .intro-social li a:visited {
+.intro-social li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background: rgba(255, 216, 0, 0.07);
     color: #ffd700;
-    transition: color 0.2s, text-shadow 0.2s;
+    box-shadow: 0 2px 12px #ff6a0033;
+    transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+    border: 2px solid transparent;
 }
 .intro-social li a:hover, .intro-social li a:focus {
-    color: #ff6a00;
-    text-shadow: 0 0 8px #ff6a00aa;
-}
-/* Responsive improvements */
-@media only screen and (max-width:1024px) {
-    .intro-content h1 { font-size: 7.6rem; }
-    .intro-social { font-size: 3rem; }
-    .intro-social li { margin: 0 15px; }
-}
-@media only screen and (max-width:768px) {
-    #intro { min-height: 660px; }
-    .intro-content h1 { font-size: 5.2rem; }
-    .intro-content h5 { font-size: 1.8rem; }
-    .intro-content .intro-position { font-size: 1.3rem; }
-    .intro-social { font-size: 2.5rem; }
-    .intro-social li { margin: 0 10px; }
-}
-@media only screen and (max-width:600px) {
-    #intro { min-height: 520px; }
-    .intro-content h1 { font-size: 2.2rem; margin-bottom: .6rem; }
-    .intro-content h5 { font-size: 1.2rem; margin-bottom: .3rem; letter-spacing: .1rem; }
-    .intro-content .intro-position { font-size: 1rem; }
-    .intro-social { font-size: 1.6rem; }
-}
- 
-
-/* Ember animated background */
-body::before {
-    content: "";
-    position: fixed;
-    z-index: -2;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: radial-gradient(circle at 60% 80%, #ff6a00 0%, transparent 60%),
-                radial-gradient(circle at 30% 60%, #ff3c00 0%, transparent 70%),
-                radial-gradient(circle at 80% 30%, #ffd70022 0%, transparent 80%);
-    opacity: 0.16;
-    animation: emberPulse 6s infinite alternate;
-}
-
-@keyframes emberPulse {
-    0% { opacity: 0.10; filter: blur(0px);}
-    50% { opacity: 0.22; filter: blur(2px);}
-    100% { opacity: 0.10; filter: blur(0px);}
-}
-
-header {
-    background: rgba(24, 24, 27, 0.95);
-    border-bottom: 1px solid #2d2d2d;
-    box-shadow: 0 4px 24px #ff6a0033;
-    padding: 36px 0 24px 0;
-    text-align: center;
-    position: relative;
-}
-
-.logo h1, h1 {
-    font-size: 2.7rem;
-    font-weight: 800;
-    color: #ff6a00;
-    letter-spacing: 2px;
-    text-shadow: 0 0 16px #ff6a00aa, 0 2px 8px #000a;
-    margin: 0;
-    animation: emberGlow 2.5s infinite alternate;
-}
-
-@keyframes emberGlow {
-    0% { text-shadow: 0 0 8px #ff6a00aa, 0 2px 8px #000a;}
-    100% { text-shadow: 0 0 24px #ffd700cc, 0 2px 16px #000a;}
-}
-
-.main-navigation li a {
-    color: #ffd700;
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: 8px 18px;
-    border-radius: 6px;
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-}
-
-.main-navigation li a:hover,
-.main-navigation li.current a {
     background: #ff6a00;
     color: #fff;
-    box-shadow: 0 0 12px #ff6a00cc;
+    border-color: #ffd700;
+    transform: scale(1.13) rotate(-6deg);
+    box-shadow: 0 4px 24px #ff6a00cc;
 }
 
-main {
-    padding: 48px 20px 0 20px;
-    max-width: 900px;
-    margin: 0 auto;
+/* --- HERO SECTION --- */
+.hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 0 0 32px #ff6a0033, 0 0 20px rgba(0,0,0,0.5);
+    animation: fadeInIntro 1.2s cubic-bezier(.4,2,.6,1);
+}
+.hero-title .highlight {
+    color: #ffd700;
+    text-shadow: 0 0 16px #ffd70099;
+    background: linear-gradient(90deg, #ff6a00 0%, #ffd700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-subtitle {
+    color: #ffd700;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: .2rem;
+    text-shadow: 0 0 12px #ff6a0033, 0 0 6px rgba(0,0,0,0.2);
+    animation: fadeInIntro 1.8s cubic-bezier(.4,2,.6,1);
+}
+.hero-cta {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    padding: 0.9rem 2.5rem;
+    border-radius: 10px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ffd700 0%, #ff6a00 100%);
+    color: #111 !important;
+    box-shadow: 0 4px 24px #ff6a00aa;
+    border: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+    animation: fadeInIntro 2.2s cubic-bezier(.4,2,.6,1);
+}
+.hero-cta:hover, .hero-cta:focus {
+    background: linear-gradient(90deg, #ff6a00 0%, #ffd700 100%);
+    color: #fff !important;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 8px 32px #ff6a00cc;
 }
 
-section {
-    background: rgba(30, 30, 34, 0.92);
-    border-radius: 16px;
-    box-shadow: 0 4px 32px #ff6a0022;
-    padding: 38px 28px;
-    margin-bottom: 36px;
-    border: 1px solid #2d2d2d;
-    backdrop-filter: blur(2px);
-    transition: box-shadow 0.3s, border 0.3s;
+/* --- Glassmorphism Contact Form --- */
+.contact-form {
+    background: rgba(30, 30, 34, 0.65);
+    border-radius: 18px;
+    box-shadow: 0 8px 40px #ff6a0033, 0 1.5px 8px #000a;
+    padding: 48px 32px 38px 32px;
+    margin: 48px auto;
+    max-width: 540px;
+    border: 1.5px solid #ffd70044;
+    backdrop-filter: blur(8px) saturate(1.2);
+    text-align: center;
     position: relative;
     overflow: hidden;
+    animation: fadeInIntro 2.5s cubic-bezier(.4,2,.6,1);
 }
-
-section::before {
-    content: "";
-    position: absolute;
-    left: 50%; top: 90%;
-    width: 180px; height: 80px;
-    background: radial-gradient(circle, #ff6a00 0%, transparent 80%);
-    opacity: 0.12;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    animation: emberSection 4s infinite alternate;
-}
-
-@keyframes emberSection {
-    0% { opacity: 0.08; }
-    100% { opacity: 0.18; }
-}
-
-section h2 {
+.contact-form h2, .contact-form h3 {
     color: #ffd700;
-    font-size: 2rem;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
     letter-spacing: 1px;
     text-shadow: 0 0 8px #ff6a0055;
 }
-
-section p {
-    font-size: 1.15rem;
-    color: #f5f5f5;
-    line-height: 1.7;
+.contact-form h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
-
-.contact-form {
-    background: rgba(30, 30, 34, 0.92);
-    border-radius: 16px;
-    box-shadow: 0 4px 32px #ff6a0022;
-    padding: 38px 28px;
-    margin: 36px auto;
-    max-width: 600px;
-    border: 1px solid #2d2d2d;
-    backdrop-filter: blur(2px);
-    text-align: center; /* Center heading and form */
-}
-.contact-form h2 {
-    color: #ffd700;
-    font-size: 2rem;
-    margin-bottom: 18px;
-    letter-spacing: 1px;
-    text-shadow: 0 0 8px #ff6a0055;
-    font-family: "poppins-bold", 'Segoe UI', Arial, sans-serif;
-}
-
-input, textarea {
+.contact-form input, .contact-form textarea {
     width: 100%;
-    padding: 14px;
-    margin: 10px 0 18px 0;
+    margin-bottom: 18px;
+    padding: 14px 16px;
     border-radius: 8px;
-    border: 1px solid #444;
-    background: #23232a;
-    color: #ffd700;
-    font-size: 1rem;
+    border: 1.5px solid #ffd70044;
+    background: rgba(24,24,27,0.85);
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: inherit;
     transition: border 0.2s, box-shadow 0.2s;
-}
-
-input:focus, textarea:focus {
-    border: 1.5px solid #ff6a00;
+    box-shadow: 0 1.5px 8px #ff6a0022;
     outline: none;
-    box-shadow: 0 0 8px #ff6a00aa;
 }
-
-button, .btn, .submitform {
-    background: linear-gradient(90deg, #ff7b00d7 0%, #ff6a003f 100%);
-    color: #ffffff;
+.contact-form input:focus, .contact-form textarea:focus {
+    border: 1.5px solid #ffd700;
+    box-shadow: 0 0 12px #ffd70055;
+}
+.contact-form .submitform {
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #ffd700 0%, #ff6a00 100%);
+    color: #111 !important;
     border: none;
-    border-radius: 16px;
+    border-radius: 8px;
     padding: 14px 34px;
     font-size: 1.15rem;
     font-weight: 700;
     cursor: pointer;
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
     margin-top: 10px;
     box-shadow: 0 2px 12px #ff6a005b;
     letter-spacing: 0.5px;
-    animation: emberGlow 2.5s infinite alternate;
-    display: block;           /* Make button a block element */
-    margin: 10px 0 18px 0;
-    width: 100%;             /* Full width for better UX */
-    text-align: center;      /* Center text within button */
-    font-family: 'Segoe UI', Arial, sans-serif; /* Consistent font */
-    text-transform: uppercase; /* Uppercase for emphasis */
-    box-sizing: border-box;  /* Ensure padding and border are included in width */
+}
+.contact-form .submitform:hover, .contact-form .submitform:focus {
+    background: linear-gradient(90deg, #ff6a00 0%, #ffd700 100%);
+    color: #fff !important;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 8px 32px #ff6a00cc;
 }
 
-button:hover, .btn:hover, .submitform:hover {
-    background: linear-gradient(90deg, #ff6a003f 0%, #ff6a003f 100%);
-    color: #fff;
-    box-shadow: 0 4px 24px #ff6a00aa;
+/* --- Responsive Tweaks --- */
+@media only screen and (max-width: 900px) {
+    .hero-title { font-size: 2.5rem; }
+    .contact-form { padding: 32px 10px 28px 10px; }
 }
-
-footer {
-    background: rgba(24, 24, 27, 0.98);
-    color: #ffd700;
-    text-align: center;
-    padding: 22px 0 16px 0;
-    font-size: 1.05rem;
-    letter-spacing: 1.2px;
-    border-top: 1px solid #2d2d2d;
-    box-shadow: 0 -2px 24px #ff6a0033;
+@media only screen and (max-width: 600px) {
+    .hero-title { font-size: 1.5rem; }
+    .intro-social li a { font-size: 1.3rem; width: 38px; height: 38px; }
+    .contact-form { padding: 18px 2vw 18px 2vw; }
 }
-
-footer a {
-    color: #ff6a00;
-    text-decoration: underline;
-    transition: color 0.2s, text-shadow 0.2s;
-}
-
-footer a:hover {
-    color: #ffd700;
-    text-shadow: 0 0 8px #ff6a00aa;
-}
-
-a {
-    color: #ffa600;
-    text-decoration: none;
-    transition: color 0.2s, text-shadow 0.2s;
-    font-weight: 600;
-}
-
-a:hover {
-    color: #fff;
-    text-shadow: 0 0 8px #ffae0099;
-    text-decoration: underline;
-}
-
 @media (max-width: 700px) {
     main, section, .contact-form {
         padding: 16px 8px;
