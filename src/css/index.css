@@ -181,15 +181,12 @@ body {
     box-shadow: 0 4px 24px #ff6a00aa;
 }
 .intro-social {
-    display: block;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 4.2rem;
-    font-size: 3.3rem;
-    margin: 0;
-    padding: 0;
-    z-index: 4;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin: 1em 0 0 0; /* Reduce this value to move icons up */
+  padding: 0;
+  list-style: none;
 }
 .intro-social li {
     display: inline-block;
