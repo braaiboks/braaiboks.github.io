@@ -187,6 +187,7 @@ body {
   margin: 1em 0 0 0; /* Reduce this value to move icons up */
   padding: 0;
   list-style: none;
+  font-size: 2.7rem; /* Increase this value for larger icons */
 }
 .intro-social li {
     display: inline-block;
@@ -196,6 +197,13 @@ body {
 .intro-social li a, .intro-social li a:visited {
     color: #ffd700;
     transition: color 0.2s, text-shadow 0.2s;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1em; /* Keep icons proportional to .intro-social */
 }
 .intro-social li a:hover, .intro-social li a:focus {
     color: #ff6a00;
