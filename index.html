@@ -40,6 +40,7 @@
 
 </head>
 <body>
+  <div class="ember-bg"></div>
   <!-- Loader -->
   <div id="logo-loader">
     <div class="logo-loader-inner">
@@ -74,9 +75,10 @@
       </div>
     </div>
   </header>
-      <section id="intro">
+    <section id="intro">
       <div class="intro-content">
         <h5 class="hero-subtitle">The Ultimate Braai Experience</h5>
+        <a href="#about" class="button hero-cta">Learn More</a>
         <ul class="intro-social" aria-label="Social links">
           <li>
             <a href="https://facebook.com/" aria-label="Facebook">
@@ -108,17 +110,16 @@
     </section>
   </main>
 
-  <div class="row contact-form">
+  <div class="row contact-form glass">
     <div class="col-twelve">
-      <h2>Intrested?</h2>
-      <h3>Lets get in touch</h3>
+      <h2>Interested?</h2>
+      <h3>Let's get in touch</h3>
       <form action="https://formspree.io/f/mvgrgzpo" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
+        <input type="text" name="name" placeholder="Your Name" required autocomplete="name">
+        <input type="email" name="email" placeholder="Your Email" required autocomplete="email">
+        <textarea name="message" placeholder="Your Message" required autocomplete="off"></textarea>
         <button class="submitform">Send</button>
-        <div id="submit-loader">
-        </div>
+        <div id="submit-loader"></div>
       </form>
     </div>
   </div>
@@ -127,6 +128,13 @@
     <p>&copy; 2025 Braai Boks</p>
     <p>Website created by <a href="https://nathan-busse.github.io">Nathan Busse</a></p>
   </footer>
+  <div class="ember-overlay">
+    <div class="ember ember1"></div>
+    <div class="ember ember2"></div>
+    <div class="ember ember3"></div>
+    <div class="ember ember4"></div>
+    <div class="ember ember5"></div>
+  </div>
   <script>
     console.log("Braai Box website loaded successfully!");
   </script>
