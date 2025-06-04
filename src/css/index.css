@@ -64,16 +64,28 @@ body {
   * ------------------------------------------------------------------- 
   */
  #intro {
-    background: #151515 url(/./Assets/images/company-logo-bg.png) no-repeat center center;
+    background-image: url(/./Assets/images/company-logo-bg.png);
+    background-size: extend, cover;
+    background-position-x: center;
+    background-position-y: center;
     background-size: cover;
+    background-image: linear-gradient(180deg, rgba(24, 24, 27, 0.8) 0%, rgba(21, 21, 21, 0.8) 100%),
+                      url(/./Assets/images/company-logo-bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-color: #151515;
     background-attachment: scroll;
     width: 100%;
     height: 100%;
-    min-height: 720px;
+    min-height: 1200px;
+    max-height: 720px;
     display: table;
     position: relative;
     text-align: center;
-    box-shadow: 0 8px 32px #000a;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 #intro::before {
