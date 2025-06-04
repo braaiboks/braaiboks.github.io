@@ -10,6 +10,7 @@ body {
     overflow-x: hidden;
 }
 
+
 /* Add to your main CSS file (e.g., index.css) */
 
 #logo-loader {
@@ -20,7 +21,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.7s cubic-bezier(.4,2,.6,1), visibility 0.7s;
+  transition: opacity 0.7s cubic-bezier(.4,2,.6,), visibility 0.7s;
 }
 
 .logo-loader-inner {
@@ -65,9 +66,9 @@ body {
 /* Intro Section */
 #intro {
   background-image: 
-    linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(21, 21, 21, 0.8) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%),
     url("/Assets/images/company-logo-bg.png");
-  background-size: cover;
+  background-size: 100% 125%; /* Fills width and height */
   background-position: center center;
   background-repeat: no-repeat;
   background-origin: padding-box;
@@ -77,10 +78,11 @@ body {
   width: 100%;
   min-height: 720px;
   max-height: 1200px;
+  height: 100vh; /* Ensures section fills viewport height */
   display: table;
   position: relative;
   text-align: center;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.0);
   overflow: hidden;
 }
 
