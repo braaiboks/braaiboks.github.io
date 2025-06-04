@@ -130,7 +130,17 @@
   </footer>
   <div class="ember-overlay"></div>
   <script>
-    console.log("Braai Box website loaded successfully!");
+  // Mobile menu toggle
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.getElementById('mobile-menu-toggle');
+    const nav = document.querySelector('.main-nav ul');
+    if (toggle && nav) {
+      toggle.addEventListener('click', function() {
+        nav.classList.toggle('show-mobile');
+      });
+    }
+  });
+  console.log("Braai Box website loaded successfully!");
   </script>
 </body>
 </html>

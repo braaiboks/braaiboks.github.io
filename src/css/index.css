@@ -584,8 +584,90 @@ a:hover {
   100% { left: 100%; }
 }
 
-/* --- Responsive: keep embers subtle on mobile --- */
+/* --- Mobile Navigation --- */
+.main-nav ul {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: max-height 0.3s;
+}
+.mobile-nav {
+  display: none;
+}
 @media (max-width: 700px) {
-  .ember-bg { opacity: 0.10; }
-  .ember { opacity: 0.10; }
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    background: #18181b;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    box-shadow: 0 8px 24px #000a;
+    z-index: 100;
+    padding: 16px 0;
+  }
+  .main-nav ul.show-mobile {
+    display: flex;
+  }
+  .mobile-nav {
+    display: block;
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    z-index: 101;
+  }
+  .header-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+}
+
+/* --- Responsive Section and Form --- */
+@media (max-width: 700px) {
+  main, section, .contact-form {
+    padding: 18px 6vw !important;
+    margin: 18px 0 !important;
+    border-radius: 10px !important;
+  }
+  section h2, .contact-form h2 {
+    font-size: 1.3rem !important;
+  }
+  section p, .contact-form h3 {
+    font-size: 1rem !important;
+  }
+  input, textarea, button, .submitform {
+    font-size: 1rem !important;
+    padding: 10px !important;
+  }
+  .contact-form {
+    max-width: 98vw !important;
+  }
+}
+
+/* Prevent horizontal scroll */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  position: relative;
+}
+@media (max-width: 700px) {
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 8px;
+  }
 }
