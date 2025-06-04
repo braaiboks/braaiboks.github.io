@@ -13,8 +13,7 @@ Elevate your braai experience with Shaun's Braai Box, the perfect solution for e
 
 Whether it's a camping trip, a Sunday cookout, or a spontaneous braai, Shaun's Braai Box makes grilling easy and enjoyable. Stakeholders will love the simplicity, practicality, and market appeal of a product that enhances outdoor living and social gatherings.
 
-🔥 Shaun's Braai Box – Because Great Meat Deserves a Great Fire! 🔥Let me know if you'd like further refinements or specific target messaging!
-
+🔥 Shaun's Braai Box – Because Great Meat Deserves a Great Fire! 
 ## Project Structure
 ```
 shaunbraaiboks.github.io                               
