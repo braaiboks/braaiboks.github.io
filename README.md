@@ -1,1 +1,1 @@
-[©️2025 Braai Boks | All rights reservered](LICENSE.md)
+[© 2025 Braai Boks | Proprietary Software – All Rights Reserved. Unauthorized reproduction, distribution, or modification is strictly prohibited.](LICENSE.md "View License Agreement")
