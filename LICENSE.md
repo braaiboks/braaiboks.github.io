@@ -1,5 +1,5 @@
 
-[© 2025 Braai Boks | Proprietary Software – All Rights Reserved. Unauthorized reproduction, distribution, or modification is strictly prohibited.](README.md "View README.md")
+[© 2025 Braai Boks | Proprietary Software – All Rights Reserved. Unauthorized reproduction, distribution, or modification is strictly prohibited.](/ "View README.md")
 
 
 ## Authorized Use:
