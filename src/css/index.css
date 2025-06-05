@@ -891,3 +891,11 @@ html, body {
   line-height: 1.2;
   top: 0.1rem;
 }
+
+#back-to-top:hover i,
+#back-to-top:focus i {
+  color: #ff6a00;
+  filter: drop-shadow(0 0 8px #ffd700aa);
+  transform: scale(1.15);
+  transition: color 0.2s, filter 0.2s, transform 0.2s;
+}
