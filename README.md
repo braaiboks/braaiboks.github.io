@@ -1,3 +1,5 @@
+[© 2025 Braai Boks | Proprietary Software – All Rights Reserved. Unauthorized reproduction, distribution, or modification is strictly prohibited.](LICENSE.md "View License Agreement")
+
 ## Authorized Use:
 - ✅ **Exclusive Rights:** The Software—including all media, branding, source code, and associated assets—is licensed solely to Braai Boks. No other individual, organization, or entity is permitted to use, modify, reproduce, distribute, or otherwise exploit the Software in any manner.
 
@@ -14,4 +16,3 @@
 - 🔒 **No Unauthorized Alterations:** Any alterations, modifications, or derivative works of the Software are strictly prohibited unless expressly authorized in writing by Braai Boks.
 - 🔒 **Trademark and Branding:** The proprietary branding and trademarks of Braai Boks contained within the Software may not be used or reproduced by any party other than Braai Boks or its explicitly authorized representatives.
 
-[© 2025 Braai Boks | Proprietary Software – All Rights Reserved. Unauthorized reproduction, distribution, or modification is strictly prohibited.](LICENSE.md "View License Agreement")
