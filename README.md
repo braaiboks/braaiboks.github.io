@@ -6,7 +6,7 @@
 - ❌ **Redistribution Prohibition:** Redistribution or replication of the Software or any of its components—whether for public or private purposes—is strictly prohibited.
 - ❌ **Anti-Piracy:** Any attempt to replicate, reproduce, distribute, or create derivative works of the Software—or any component thereof—in whole or in part for the purpose of developing, producing, or marketing any product or service that directly or indirectly competes with Braai Boks is strictly prohibited.
 
-The Software and its associated assets—including advertised products and their designs in any digital, analog or physical means, methods, conversions and formats whats so ever including but not limited to the following examples mentioned:
+  The Software and its associated assets—including advertised products and their designs in any digital, analog or physical means,methods,conversions and formats whats so ever including but not limited to the following examples mentioned:
   (visual, tactile, physical, material, or audio) and the possession of any purchased Braai Boks products—shall not be                             copied or used to produce competing products, services, or technologies. No individual, organization, or entity may                              utilize any portion of the Software to fabricate any product or service that would diminish or undermine the exclusive                           rights and competitive advantage of Braai Boks.
 
 ## Conditions:
