@@ -806,27 +806,29 @@ html, body {
 }
 @media screen and (max-width: 600px) {
 
+    /* REMOVE or COMMENT OUT this block to unify mobile and desktop styles */
+    /*
     .product-item.glass {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 2px 24px rgba(255, 106, 0, 0.22);
-  border-radius: 16px;
-  padding: 1.5rem;
-  color: #fffbe0;
-  font-size: 1.15rem;
-  line-height: 1.7;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 0;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 2px 24px #ff6a0022;
-}
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 2px 24px rgba(255, 106, 0, 0.22);
+      border-radius: 16px;
+      padding: 1.5rem;
+      color: #fffbe0;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 0;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 24px #ff6a0022;
+    }
     .product-item.glass h3 {
         font-size: 1.5rem;
         margin-bottom: 0.8rem;
@@ -839,6 +841,7 @@ html, body {
         padding-left: 1.2rem;
         font-size: 0.95rem;
     }
+    */
 }
 .product-item.glass {
   background: rgba(255, 255, 255, 0.04);
